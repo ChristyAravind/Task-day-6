@@ -1,0 +1,486 @@
+
+Task 1: Simple Programs todo for variables
+
+
+1) Declare four variables without assigning values and print them in console
+let a;
+let b;
+let c;
+let d;
+
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+
+2) How to get value of the variable myvar as output
+
+
+var myvar= 1;
+
+console.log(myvar);
+
+3) Declare variables to store your first name, last name, marital status, country and age in multiple lines
+
+let firstname = "Aravind ";
+
+let lastname = "M";
+
+let maritalstatus = "single";
+
+let country = "India";
+
+let age = "25";
+
+ 4) Declare variables to store your first name, last name, marital status, country and age in a single line
+
+let details =["Aravind", "M", "single", "India" ,"25"];
+
+5) Declare variables and assign string, boolean, undefined and null data types
+
+let a =String;
+
+let b=Boolean;
+
+let c=undefined;
+
+let d=null;
+
+let e=Number;
+
+6) Convert the string to integer
+
+let d="54";
+
+let a=parseInt(d);
+
+let b=Number(d);
+
+let c=+d;
+
+
+7. Write 6 statement which provide truthy & falsey values.
+
+let a=1;
+
+let b =0;
+
+let c=2;
+
+console.log(a || b);=>true;
+console.log(a || c);=>true;
+console.log(b || c);=>true;
+console.log(a && b);=>false;
+console.log(a && c);=>true;
+console.log(b && c);=>false;
+
+
+Task 2: Simple Programs todo for Operators
+
+1) Square of a number
+
+let a =2;
+
+console.log(a*a);
+
+2) Swapping 2 numbers
+
+let a=24;
+
+let d=23;
+
+let f=a;
+
+a=d;
+
+d=f;
+
+console.log(a,d);
+
+3) Addition of 3 numbers
+
+let a=1;
+
+let b=2;
+
+let c=3;
+
+console.log(a+b+c);
+
+4)  Celsius to Fahrenheit conversion
+
+let a= 12;
+
+b=(a*9/5)+32;
+
+console.log(b);
+
+5) Meter to miles
+
+let a=50000;
+
+let b=a/1609.344;
+
+console.log(b);
+
+6) Pounds to kg
+
+let a=70;
+
+let b=0.453*a;
+
+console.log(b);
+
+7) Calculate Batting Average
+
+let a=[43,47,56];
+
+let sum =0;
+
+a.map((c)=>{sum=sum+parseInt(c)});
+
+let ans=sum/a.length;
+
+console.log(ans);
+
+8) Calculate five test scores and print their average
+
+let a=[50,70,62,75,23];
+
+let sum =0;
+
+a.map((c)=>{sum=sum+parseInt(c)});
+
+let ans=sum/a.length;
+
+console.log(ans);
+
+9) Power of any number x ^ y.
+
+function power(x,y){
+    
+    console.log(Math.pow(x,y));
+}
+power(24,2);
+
+10) Calculate Simple Interest
+
+let p=700000;
+
+let r=5;
+
+let t=3;
+
+let si=(p*r*t)/100;
+
+console.log(si);
+
+11) Calculate area of an equilateral triangle
+
+let a=5;
+
+let area=(Math.sqrt(3)/4)*Math.pow(a,2);
+
+console.log(area);
+
+
+12) Area Of Isosceles Triangle
+
+let b =6;
+
+let h=10;
+
+let area=(b*h)/2;
+
+console.log(area);
+
+13) Volume Of Sphere
+
+let r=5;
+
+let volume=4/3*Math.PI*Math.pow(r,3);
+
+console.log(volume);
+
+14) Volume Of Prism
+
+let b=7;
+
+let h=9;
+
+let volume=b*h;
+
+console.log(volume);
+
+15) Find area of a triangle.
+
+let b=5;
+
+let h=7;
+
+let area=(1/2)*b*h;
+
+console.log(area);
+
+16) Give the Actual cost and Sold cost, Calculate Discount Of Product
+
+let a =2000;
+
+let b= 1500;
+
+let c=(a-b)/a*100;
+
+console.log(c);
+
+17) Given their radius of a circle and find its diameter, circumference and area.
+
+let r=5;
+
+let dia =r*r;
+
+let circumference=2*Math.PI*r;
+
+let area=Math.PI*Math.pow(r,2);
+
+console.log(dia);
+
+console.log(circumference);
+
+console.log(area);
+
+18)  Given two numbers and perform all arithmetic operations.
+
+let a=10;
+
+let b= 2;
+
+let add=a+b;
+
+let sub=a-b;
+
+let multiply=a*b;
+
+let divide=a/b;
+
+let mod =a%b;
+
+console.log(add);
+console.log(sub);
+console.log(multiply);
+console.log(divide);
+console.log(mod);
+
+19) Display the asterisk pattern as shown below(No loop needed):
+
+let pattern="*****";
+
+console.log(pattern);
+console.log(pattern);
+console.log(pattern);
+console.log(pattern);
+console.log(pattern);
+
+20) Calculate electricity bill?For example, a consumer consumes 100 watts per hour daily for one month. Calculate the total energy bill of that consumer if per unit rate is 10?
+
+let unit=10;
+
+let reading=24*30;
+
+let bill=unit*reading;
+
+console.log(bill);
+
+21) Program To Calculate CGPA
+
+let english=6.5;
+
+let mechanics=5.5;
+
+let maths=5.8;
+
+let economics=6.7;
+
+let computer=7.2;
+
+let CGPA=(english+mechanics+maths+economics+computer)/5;
+
+console.log(CGPA);
+
+
+Task 3: Simple Programs todo for Condition , Looping and Arrays
+
+1). Write a loop that makes seven calls to console.log to output the following triangle:
+
+       let n = 7;
+
+       let str = "";
+for (let i = 1; i <= n; i++) {
+  for (let j = 0; j < i; j++) {
+    str += "#";
+  }
+  string += "\n";
+}
+console.log(string);
+
+2).Iterate through the string array and print it contents
+
+               var strArray= ["<option>Jazz</option>",
+                              ,"<option>Blues</option>",
+                               ,"<option>New Age</option>",
+                                 ,"<option>Classical</option>",
+                                    ,"<option>Opera</option>"]
+
+                      for(let i = 0; i < strArray.length; i++){
+                              console.log(strArray[i]);
+                      }
+
+Arrays
+                  
+1). write a code to count the elements in the array . Don’t use length property
+
+              var myarray=[11,22,33,44,55]
+ 
+              let length = 0;
+              for (let i of myarray){
+                length++;
+              }
+              console.log(length);
+
+
+2). Declare an empty array;
+      let foods = [];
+
+Create an array called foods holds the names of your top 20 favorite foods, starting with the best food.
+
+      let foods = ["adai","sambar","idly","Biryani","dosa","poori","chappathi","fried rice","puli kulambu","sothi kulambu","white curry",
+                     "idiyappam","curd rice","rasam","payasam","Mushroom","upma","rice","paneer","gobi"];
+
+Foods variable holds the names of your top 20 favorite foods, starting with the best food. How can you find your fifth favorite food?
+                   
+let fifth = foods[4];
+                  
+console.log(fifth);
+                     
+Find the length of your foods array
+    
+            let len = 0;
+            for(let a of foods){
+              length++;
+            }
+            console.log(len);
+
+Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
+
+
+            let friends = [
+                           "Mari",
+                           "MaryJane",
+                           "CaptianAmerica",
+                           "Munnabai",
+                           "Jeff",
+                           "AAK chandran"];
+
+                           function dataHandling(input){
+                            for (var i = 0; i < input.length; i++) {
+                                  friends[0] = "Munnabai";
+                            }
+                            return input;
+                            }
+                            console.log(dataHandling(friends));
+
+                                   
+
+ Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
+                            const friends = [
+                            "Mari",
+                            "MaryJane",
+                            "CaptianAmerica",
+                            "Munnabai",
+                            "Jeff",
+                            "AAK chandran"
+                            ];
+                                                    
+                            console.log(friends.slice(0,3))
+                                   
+We have two lists of friends below. Use array methods to combine them into one alphabetically-sorted list.
+ 
+                                    var friends1 = [
+                                      "Mari",
+                                      "MaryJane",
+                                      "CaptianAmerica",
+                                      "Munnabai",
+                                      "Jeff",
+                                      "AAK chansdran"
+                                      ];
+                                      var friends2 = [
+                                      "Gabbar",
+                                      "Rajinikanth",
+                                      "Mass",
+                                      "Spiderman",
+                                      "Jeff",
+                                      "ET"
+                                      ];
+                                     let friends = [...friends1,...friends2];
+
+                                     console.log(friends.sort());
+                                     
+1).Get the first item, the middle item and the last item of the array
+
+
+     let arr = [1,2,3,"GUVI",6,7,8,"DONE"];
+     let n = arr.length;
+    
+       console.log(arr[0] + " "+arr[n/2] + " "+arr[n-1]);
+
+
+2). Add your name to the end of the friends array, and add another name to beginning.
+var friends = [
+"Gabbar",
+"Rajinikanth",
+"Mass",
+"Spiderman",
+"Jeff",
+"ET"
+];
+
+friends.push("Ram");
+console.log(friends);
+friends.unshift("Ragu");
+console.log(friends);
+
+3). Add Mr or Ms to the names in the friends array.
+   var friends = [
+"Mr.Gabbar",
+"Mr.Rajinikanth",
+"Ms.WonderWomen",
+"Mr.Raja",
+"Ms.Raji"];
+console.log(friends);
+
+4). Concat all the names the friends array and return as comma “,” seperated string.
+
+
+const friends = ["Mari","MaryJane","CaptianAmerica","Munnabai","Jeff","AAKchandran"];
+
+console.log(friends.join(","));
+
+5).Find the name with min characters and return the name.
+
+var friends = [
+"Gabbar",
+"Rajinikanth",
+"Mass",
+"Spiderman",
+"Jeff",
+"ET"
+];
+
+
+console.log(
+  friends.reduce((a, b) => a.length <= b.length ? a : b)
+);
+
+
+
+
+
